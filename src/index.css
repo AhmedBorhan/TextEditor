@@ -1,13 +1,161 @@
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background: #f0f0f0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.all-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 32px;
+}
+
+.rules-section {
+	padding: 16px;
+	background-color: #e1e1e1;
+	height: calc(100vh - 96px);
+	border-radius: 5px;
+	width: 30%;
+	overflow: auto;
+}
+
+.editor-section {
+	width: calc(70% - 64px);
+	margin-right: 32px;
+	height: calc(100vh - 96px);
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.replace-btn {
+	width: 66% !important;
+}
+
+input {
+	/* width: 100px; */
+	direction: rtl;
+}
+
+hr {
+	border-style: solid;
+	border: none;
+	border-top: 1px solid #7f8c8d;
+	
+}
+
+.public-DraftEditor-content {
+	background: #fff;
+	border: 1px solid #e1e1e1;
+	border-radius: 5px;
+	top: 0;
+	position: absolute;
+	padding: 1em;
+	left: 0;
+	height: 100%;
+	overflow: auto;
+	width: calc(100% - 32px);
+}
+
+.search-and-replace {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 16px;
+	flex-wrap: wrap;
+}
+
+.search-and-replace > * {
+	border: 0;
+	border-radius: 5px;
+	font-size: 1em;
+	border-right: none;
+	padding: .4em .5em;
+	width: 25%;
+}
+
+/* .search-and-replace > *:first-child {
+	border-bottom-left-radius: 9px;
+	border-top-left-radius: 9px;
+}
+
+.search-and-replace > *:last-child {
+	border-bottom-right-radius: 9px;
+	border-right: 1px solid #ccc;
+	border-top-right-radius: 9px;
+} */
+#add{
+	outline-style: none;
+	background: none;
+	background-color: none;
+	border: none;
+	border-style: none;
+}
+
+.disabled {
+	opacity: 0.3;
+	cursor: not-allowed;
+}
+
+input[type=checkbox] {
+    transform: scale(1.3);
+}
+
+img, input[type=checkbox]{
+	cursor: pointer;
+}
+
+.search-and-replace button {
+	cursor: pointer;
+	background: #f3f3f3;
+	transition: 200ms background;
+}
+
+.search-and-replace button:hover {
+	background: #f9f9f9;
+}
+
+.search-and-replace-highlight {
+	background: yellow;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* media query for under 900 */
+
+@media only screen and (max-width: 900px) {
+	.editor-section {
+		width: 100%;
+		margin-right: 0;
+	}
+	.rules-section {
+		width: 100%;
+		margin-top: 64px;
+		height: 100%;
+	}
 }

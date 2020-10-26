@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import "draft-js/dist/Draft.css";
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -15,3 +17,12 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+// check uncheck all & single 
+// show & hide all & single 
+// add, update, delete rules 
+
+// 100vh
+// 100%
+//over flow auto
+// text overflow
