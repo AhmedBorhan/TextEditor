@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/TextEditor/static/css/main.5daefb2d.chunk.css",
+    "main.js": "/TextEditor/static/js/main.25f3bb99.chunk.js",
+    "main.js.map": "/TextEditor/static/js/main.25f3bb99.chunk.js.map",
+    "runtime-main.js": "/TextEditor/static/js/runtime-main.0220d122.js",
+    "runtime-main.js.map": "/TextEditor/static/js/runtime-main.0220d122.js.map",
+    "static/css/2.e3cf4cf6.chunk.css": "/TextEditor/static/css/2.e3cf4cf6.chunk.css",
+    "static/js/2.ad949155.chunk.js": "/TextEditor/static/js/2.ad949155.chunk.js",
+    "static/js/2.ad949155.chunk.js.map": "/TextEditor/static/js/2.ad949155.chunk.js.map",
+    "index.html": "/TextEditor/index.html",
+    "precache-manifest.29fcaa9f89536c199cc2687d4f36fdfd.js": "/TextEditor/precache-manifest.29fcaa9f89536c199cc2687d4f36fdfd.js",
+    "service-worker.js": "/TextEditor/service-worker.js",
+    "static/css/2.e3cf4cf6.chunk.css.map": "/TextEditor/static/css/2.e3cf4cf6.chunk.css.map",
+    "static/css/main.5daefb2d.chunk.css.map": "/TextEditor/static/css/main.5daefb2d.chunk.css.map",
+    "static/js/2.ad949155.chunk.js.LICENSE.txt": "/TextEditor/static/js/2.ad949155.chunk.js.LICENSE.txt",
+    "static/media/delete.svg": "/TextEditor/static/media/delete.28438a18.svg",
+    "static/media/find.svg": "/TextEditor/static/media/find.fa7651f7.svg",
+    "static/media/floppy-disk.svg": "/TextEditor/static/media/floppy-disk.9e5413c0.svg",
+    "static/media/plus.svg": "/TextEditor/static/media/plus.44133772.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0220d122.js",
+    "static/css/2.e3cf4cf6.chunk.css",
+    "static/js/2.ad949155.chunk.js",
+    "static/css/main.5daefb2d.chunk.css",
+    "static/js/main.25f3bb99.chunk.js"
+  ]
+}
