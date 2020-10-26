@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/TextEditor/static/css/main.5daefb2d.chunk.css",
-    "main.js": "/TextEditor/static/js/main.25f3bb99.chunk.js",
-    "main.js.map": "/TextEditor/static/js/main.25f3bb99.chunk.js.map",
+    "main.js": "/TextEditor/static/js/main.b9708a7e.chunk.js",
+    "main.js.map": "/TextEditor/static/js/main.b9708a7e.chunk.js.map",
     "runtime-main.js": "/TextEditor/static/js/runtime-main.0220d122.js",
     "runtime-main.js.map": "/TextEditor/static/js/runtime-main.0220d122.js.map",
     "static/css/2.e3cf4cf6.chunk.css": "/TextEditor/static/css/2.e3cf4cf6.chunk.css",
     "static/js/2.ad949155.chunk.js": "/TextEditor/static/js/2.ad949155.chunk.js",
     "static/js/2.ad949155.chunk.js.map": "/TextEditor/static/js/2.ad949155.chunk.js.map",
     "index.html": "/TextEditor/index.html",
-    "precache-manifest.29fcaa9f89536c199cc2687d4f36fdfd.js": "/TextEditor/precache-manifest.29fcaa9f89536c199cc2687d4f36fdfd.js",
+    "precache-manifest.91f0961f87b8dd14392eb87fa2345535.js": "/TextEditor/precache-manifest.91f0961f87b8dd14392eb87fa2345535.js",
     "service-worker.js": "/TextEditor/service-worker.js",
     "static/css/2.e3cf4cf6.chunk.css.map": "/TextEditor/static/css/2.e3cf4cf6.chunk.css.map",
     "static/css/main.5daefb2d.chunk.css.map": "/TextEditor/static/css/main.5daefb2d.chunk.css.map",
@@ -24,6 +24,6 @@
     "static/css/2.e3cf4cf6.chunk.css",
     "static/js/2.ad949155.chunk.js",
     "static/css/main.5daefb2d.chunk.css",
-    "static/js/main.25f3bb99.chunk.js"
+    "static/js/main.b9708a7e.chunk.js"
   ]
 }
