@@ -9,19 +9,25 @@ import EditIcon from './icons/floppy-disk.svg';
 import ReplaceIcon from './icons/find.svg';
 import AddIcon from './icons/plus.svg';
 
+const specialCharacters = [ '\\', '.', '+', '*', '?', '^', '$', '(', ')', '[', ']', '{', '}', '|' ];
+
 const findWithRegex = (regex, contentBlock, callback) => {
 	const text = contentBlock.getText();
+	let index = 0;
 	let matchArr, start, end;
 	while ((matchArr = regex.exec(text)) !== null) {
 		start = matchArr.index;
 		end = start + matchArr[0].length;
-		callback(start, end);
+		callback(start, end, index);
+		index++;
 	}
 };
-
 const SearchHighlight = (props) => <span className="search-and-replace-highlight">{props.children}</span>;
 
 const generateDecorator = (highlightTerm) => {
+	specialCharacters.forEach((sc) => {
+		highlightTerm = highlightTerm.replaceAll(sc, '\\' + sc);
+	});
 	const regex = new RegExp(highlightTerm, 'g');
 	return new CompositeDecorator([
 		{
@@ -39,7 +45,7 @@ function App() {
 	const [ editorState, setEditorState ] = React.useState(EditorState.createEmpty());
 	const [ state, setState ] = useState({ text: '', replace: '' });
 	const [ rules, setRules ] = useState([]);
-
+	console.log('this is the app okay okay okay okay okay okay pokay okay');
 	const editor = React.useRef(null);
 	function focusEditor() {
 		editor.current.focus();
@@ -135,22 +141,27 @@ function App() {
 		let contentState = editorState.getCurrentContent();
 		if (state.text !== '' && state.replace !== '') theRules = [ ...theRules, { ...state, checked: true } ];
 		for (let i = 0; i < theRules.length; i++) {
-			const { text, replace, checked } = theRules[i];
+			let { text, replace, checked } = theRules[i];
 			if (!checked) continue;
+			specialCharacters.forEach((sc) => {
+				text = text.replaceAll(sc, '\\' + sc);
+			});
 			const regex = new RegExp(text, 'g');
 			const selectionsToReplace = [];
 			//contentState = editorState.getCurrentContent();
 			const blockMap = contentState.getBlockMap();
+			const length = parseInt(replace.length - text.length);
 
 			blockMap.forEach((contentBlock) =>
-				findWithRegex(regex, contentBlock, (start, end) => {
+				findWithRegex(regex, contentBlock, (start, end, index) => {
 					const blockKey = contentBlock.getKey();
 					const blockSelection = SelectionState.createEmpty(blockKey).merge({
-						anchorOffset: start,
-						focusOffset: end
+						anchorOffset: start + index * length,
+						focusOffset: end + index * length
 					});
 
 					selectionsToReplace.push(blockSelection);
+					console.log('THIS IS BLOCK SELECTION', blockSelection);
 				})
 			);
 

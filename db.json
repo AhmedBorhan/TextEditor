@@ -1,76 +1,52 @@
 {
   "rules": [
     {
-      "text": "wsha",
-      "replace": "weeee",
+      "text": "ئەڕۆم",
+      "replace": "دەڕۆم",
       "checked": true,
       "id": 1
     },
     {
-      "text": "-server",
-      "replace": "ne",
+      "text": "ئەکەم",
+      "replace": "دەکەم",
       "checked": false,
       "id": 2
     },
     {
-      "text": "json-",
-      "replace": "new",
+      "text": "ئەزانم",
+      "replace": "دەزانم",
       "checked": "true",
       "id": 3
     },
     {
-      "text": "nooo",
-      "replace": "new",
+      "text": "هاو",
+      "replace": "هات",
       "checked": "true",
       "id": 5
     },
     {
-      "text": "wsh",
-      "replace": "to",
+      "text": "ڕۆی",
+      "replace": "ڕۆشت",
       "checked": false,
       "id": 16
     },
     {
-      "text": "sea",
-      "replace": "frozen",
+      "text": "محەمەد",
+      "replace": "ئەحمەد",
       "checked": false,
       "id": 17
     },
     {
-      "text": "ج",
-      "replace": "ج",
+      "text": "،",
+      "replace": ",",
       "checked": "true",
       "id": 18
     },
     {
-      "text": "ج",
-      "replace": "ج",
+      "text": "ث",
+      "replace": "پ",
       "checked": "true",
       "id": 19
-    },
-    {
-      "text": "ب",
-      "replace": "ب",
-      "checked": "true",
-      "id": 20
-    },
-    {
-      "text": "ن",
-      "replace": "ن",
-      "checked": "true",
-      "id": 21
-    },
-    {
-      "text": "ک",
-      "replace": "ل",
-      "checked": "true",
-      "id": 22
-    },
-    {
-      "text": "tee",
-      "replace": "wer",
-      "checked": false,
-      "id": 25
     }
   ]
 }
